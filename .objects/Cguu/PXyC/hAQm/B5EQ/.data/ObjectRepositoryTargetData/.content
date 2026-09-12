@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="foTEG7ata02hmMHnwIobJg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" CVScreenId="af3977e5-50f3-4c1b-bb36-eb0ec8dc0735" CvTextArea="1011, 711, 1324, 40" CvType="AnyWordGroup" DesignTimeRectangle="752, 703, 1844, 60" DesignTimeScaleFactor="2" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='message2' tag='DIV' type='' /&gt;" Guid="1aff910f-bced-4751-8fbc-f533afb102d6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="af3977e5-50f3-4c1b-bb36-eb0ec8dc0735" CvTextArea="1369, 611, 610, 84" CvTextArgument="Congratulations!" CvType="Text" DesignTimeRectangle="752, 595, 1844, 108" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Congratulations!' tag='DIV' type='' class='message1 teal-text text-darken-2' check:innerText='Congratulations!' /&gt;" Guid="9b12b066-861a-4736-97cb-d3ed2e9e3a08" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7f9f331c8c647ce90679a3e39e689a23.png" xmlns="">0FsS8pIGRrUmQDQecH9XlvA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

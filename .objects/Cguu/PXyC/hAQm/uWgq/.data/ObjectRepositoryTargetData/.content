@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xweK3DAchkuC4LdBElEuaQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallenge.com" DesignTimeRectangle="952, 538, 552, 92" DesignTimeScaleFactor="2" Guid="c0913ae6-5638-431a-9a8b-567e6ea6dc48" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Rpa Challenge' /&gt;" SearchSteps="Semantic" SemanticElementType="InputBox" SemanticTextArgument="%[&quot;Phone Number&quot;]" TargetType="SemanticBased" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="12b579370966d933bedfe8b0d9d83046.png" xmlns="">0_MWWaF_pSEiQbpJuWl293w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetValue</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
