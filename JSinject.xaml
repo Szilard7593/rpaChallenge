@@ -105,7 +105,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="JSinject" sap:VirtualizedContainerService.HintSize="790,1206" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="JSinject" sap:VirtualizedContainerService.HintSize="790,1270" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_data" />
     </Sequence.Variables>
@@ -115,39 +115,19 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dt_data]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="518,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="challenge.xlsx" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Rpa Challenge" sap:VirtualizedContainerService.HintSize="518,1063" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1eb7ae5d-af6c-49b4-b0ba-56f9f2cee6da" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Rpa Challenge" sap:VirtualizedContainerService.HintSize="518,1127" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="1eb7ae5d-af6c-49b4-b0ba-56f9f2cee6da" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,822" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,886" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="0" DelayBefore="0" DisplayName="Click 'Start'" sap:VirtualizedContainerService.HintSize="450,227" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="1eb7ae5d-af6c-49b4-b0ba-56f9f2cee6da" Version="V4">
-              <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="rpachallenge.com" CVScreenId="0da5fa0a-b907-437b-8e95-1e58cc8285ac" ContentHash="baKe2-9qRk6UVGCcmQO35w" CvElementArea="37, 1530, 671, 116" CvTextArea="325, 1571, 98, 32" CvTextArgument="START" CvType="Button" DesignTimeRectangle="44, 1535, 663, 108" DesignTimeScaleFactor="2" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='waves-effect col s12 m12 l12 btn-large uiColorButton' aaname='Start' check:innerText='START' /&gt;" Guid="f53ce480-596b-40e1-9b00-0919bf57f906" InformativeScreenshot="e3150c7155c10cf7a396a932553f92be.png" Reference="7kWfA8WXjUiyZmzrz2axAQ/cOonfyGV80ybBlYL9clN_Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Rpa Challenge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="0da5fa0a-b907-437b-8e95-1e58cc8285ac" CvElementArea="41, 1441, 664, 79" CvTextArea="197, 1463, 286, 32" CvTextArgument="DOWNLOAD EXCEL" CvType="Button" DesignTimeRectangle="44, 1445, 663, 72" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname=' Download Excel cloud_download' tag='A' type='' class=' col s12 m12 l12 btn waves-effect waves-light uiColorPrimary center' check:innerText='DOWNLOAD EXCEL&amp;#xA;cloud_download' /&gt;" Guid="7d34b2e0-b4bf-4647-8766-6d1842c44ba6" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NClick.Target>
-              <uix:NClick.VerifyOptions>
-                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                  <uix:VerifyExecutionOptions.Retry>
-                    <InArgument x:TypeArguments="x:Boolean" />
-                  </uix:VerifyExecutionOptions.Retry>
-                  <uix:VerifyExecutionOptions.Timeout>
-                    <InArgument x:TypeArguments="x:Double" />
-                  </uix:VerifyExecutionOptions.Timeout>
-                </uix:VerifyExecutionOptions>
-              </uix:NClick.VerifyOptions>
-            </uix:NClick>
+            <uix:NInjectJsScript InputParameter="{x:Null}" ScriptOutput="{x:Null}" DelayAfter="0" DelayBefore="0" DisplayName="Inject Js Script" ExecutionWorld="Isolated" sap:VirtualizedContainerService.HintSize="450,291" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScriptCode="function (element, input) {&#xD;&#xA;&#xD;&#xA;document.querySelector('button.uiColorButton').click();&#xD;&#xA;}" Timeout="0" Version="V4" />
             <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dt_data]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="450,533" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
@@ -160,7 +140,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <uix:NInjectJsScript ScriptOutput="{x:Null}" DelayAfter="0" DelayBefore="0" DisplayName="Inject Js Script 'EmailFirst NamePhone Nu…'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="382,282" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InputParameter="[CurrentRow(&quot;Last Name &quot;).ToString() + &quot;, &quot; + CurrentRow(&quot;First Name&quot;).ToString() + &quot;, &quot; + CurrentRow(&quot;Email&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Address&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Phone Number&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Role in Company&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Company Name&quot;).ToString()]" ScopeIdentifier="1eb7ae5d-af6c-49b4-b0ba-56f9f2cee6da" ScriptCode="[&quot;function(element, param) {&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelFirstName]').value = `&quot; + CurrentRow(&quot;First Name&quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelLastName]').value = `&quot; + CurrentRow(&quot;Last Name &quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelCompanyName]').value = `&quot; + CurrentRow(&quot;Company Name&quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelRole]').value = `&quot; + CurrentRow(&quot;Role in Company&quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelAddress]').value = `&quot; + CurrentRow(&quot;Address&quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelEmail]').value = `&quot; + CurrentRow(&quot;Email&quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[ng-reflect-name=labelPhone]').value = `&quot; + CurrentRow(&quot;Phone Number&quot;).ToString() + &quot;`;&#xD;&#xA;    document.querySelector('input[type=submit]').click();&#xD;&#xA;}&quot;]" Timeout="0" Version="V4" />
+                    <uix:NInjectJsScript ScriptOutput="{x:Null}" DelayAfter="0" DelayBefore="0" DisplayName="Inject Js Script 'EmailFirst NamePhone Nu…'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="382,282" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" InputParameter="[CurrentRow(&quot;Last Name &quot;).ToString() + &quot;, &quot; + CurrentRow(&quot;First Name&quot;).ToString() + &quot;, &quot; + CurrentRow(&quot;Email&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Address&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Phone Number&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Role in Company&quot;).ToString() + &quot;,&quot; + CurrentRow(&quot;Company Name&quot;).ToString()]" ScopeIdentifier="1eb7ae5d-af6c-49b4-b0ba-56f9f2cee6da" ScriptCode="[&quot;function(element, param) {&#xA;    document.querySelector('input[ng-reflect-name=labelFirstName]').value = `&quot; + CurrentRow(&quot;First Name&quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[ng-reflect-name=labelLastName]').value = `&quot; + CurrentRow(&quot;Last Name &quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[ng-reflect-name=labelCompanyName]').value = `&quot; + CurrentRow(&quot;Company Name&quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[ng-reflect-name=labelRole]').value = `&quot; + CurrentRow(&quot;Role in Company&quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[ng-reflect-name=labelAddress]').value = `&quot; + CurrentRow(&quot;Address&quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[ng-reflect-name=labelEmail]').value = `&quot; + CurrentRow(&quot;Email&quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[ng-reflect-name=labelPhone]').value = `&quot; + CurrentRow(&quot;Phone Number&quot;).ToString() + &quot;`;&#xA;    document.querySelector('input[type=submit]').click();&#xA;}&quot;]" Timeout="0" Version="V4" />
                   </Sequence>
                 </ActivityAction>
               </ui:ForEachRow.Body>
